@@ -1,0 +1,96 @@
+.body {
+    font-family: 'Roboto', 'Raleway' 'sans-serif';
+}
+
+:root {
+    --first-color: #2196F3;
+}
+
+.logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    color: #2a2a2a;
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--first-color);   
+}
+
+
+.header-list {
+    list-style-type: none;
+}
+
+.header-link {
+    font-family: 'Roboto';
+    color: #212121;
+}
+
+.header-link:hover {
+    color: var(--first-color);
+}
+
+.product-list {
+    list-style-type: none;
+}
+
+.product-btn {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #212121;
+    padding: 6px 22px;
+}
+
+.product-btn:hover{
+    background-color: var(--first-color);
+    color: #fff;
+    cursor: pointer;
+}
+
+.mail, .phone {
+    display: inline-block;
+    font-family: 'Roboto';
+    font-weight: 500;
+    line-height: 16px;
+    color: #757575;
+    margin-top: 32px;
+    text-decoration: none;
+}
+
+.mail-footer, .phone-footer {
+    margin-top: 12px;
+}
+
+.mail:hover, .phone:hover {
+    color: var(--first-color);
+}
+
+.mail:focus, .phone:focus {
+    color: red;
+}
+
+.product-subtitle {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: 'Roboto';
+    color: #212121;
+}
+
+.product-text {
+    margin-top: 4px;
+    font-family: 'Roboto';
+    font-size: 16px;
+    color: #757575;
+}
+
+.footer-address {
+    margin-top: 28px;
+    font-family: 'Roboto';
+    color: #2a2a2a;
+}
