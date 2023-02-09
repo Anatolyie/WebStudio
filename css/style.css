@@ -1,5 +1,6 @@
 .body {
-    font-family: 'Roboto', 'Raleway' 'sans-serif';
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 14;
 }
 
 :root {
@@ -8,9 +9,9 @@
 
 .logo {
     font-family: 'Raleway';
-    font-weight: 700;
+    font-weight: bold;
     font-size: 26px;
-    color: #2a2a2a;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -19,22 +20,20 @@
 }
 
 
-.header-list {
+.list-style {
     list-style-type: none;
 }
 
 .header-link {
     font-family: 'Roboto';
     color: #212121;
+    text-decoration: none;
 }
 
 .header-link:hover {
     color: var(--first-color);
 }
 
-.product-list {
-    list-style-type: none;
-}
 
 .product-btn {
     font-family: 'Roboto';
@@ -43,7 +42,11 @@
     line-height: 26px;
     text-align: center;
     color: #212121;
+    background-color: #F5F4FA;
     padding: 6px 22px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1)
 }
 
 .product-btn:hover{
@@ -76,7 +79,7 @@
 
 .product-subtitle {
     margin-top: 20px;
-    font-weight: 700;
+    font-weight: bold;
     font-size: 18px;
     font-family: 'Roboto';
     color: #212121;
@@ -89,8 +92,100 @@
     color: #757575;
 }
 
+.contacts {
+    padding-top: 60px;
+    height: 151px;
+    background: #2F303A;
+}
+
 .footer-address {
     margin-top: 28px;
     font-family: 'Roboto';
-    color: #2a2a2a;
+    color: #fff;
+}
+
+.promo {
+    max-width: 1440px;
+    min-height: 600px;
+    padding-top: 80px;
+    background: #2F303A;
+}
+
+.promo-title {
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.promo-btn {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    background: var(--first-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    border: none
+}
+
+.description-title {
+    margin-top: 95px;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+}
+
+.description-text {
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.center-title {
+    margin-top: 95px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.team-name {
+    margin-top: 30px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.team-descr {
+    margin-top: 10px;
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #757575;
+
 }
