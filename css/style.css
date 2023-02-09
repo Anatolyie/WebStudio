@@ -1,6 +1,6 @@
-.body {
+* {
     font-family: 'Roboto', 'sans-serif';
-    font-size: 14;
+    font-style: normal;
 }
 
 :root {
@@ -25,7 +25,6 @@
 }
 
 .header-link {
-    font-family: 'Roboto';
     color: #212121;
     text-decoration: none;
 }
@@ -36,7 +35,6 @@
 
 
 .product-btn {
-    font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
@@ -57,7 +55,6 @@
 
 .mail, .phone {
     display: inline-block;
-    font-family: 'Roboto';
     font-weight: 500;
     line-height: 16px;
     color: #757575;
@@ -81,13 +78,11 @@
     margin-top: 20px;
     font-weight: bold;
     font-size: 18px;
-    font-family: 'Roboto';
     color: #212121;
 }
 
 .product-text {
     margin-top: 4px;
-    font-family: 'Roboto';
     font-size: 16px;
     color: #757575;
 }
@@ -98,10 +93,13 @@
     background: #2F303A;
 }
 
-.footer-address {
+.footer-address a {
     margin-top: 28px;
-    font-family: 'Roboto';
     color: #fff;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-decoration: none;
 }
 
 .promo {
@@ -112,7 +110,6 @@
 }
 
 .promo-title {
-    font-family: 'Roboto';
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
@@ -130,7 +127,6 @@
     background: var(--first-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    font-family: 'Roboto';
     font-weight: bold;
     line-height: 30px;
     text-align: center;
@@ -141,7 +137,6 @@
 
 .description-title {
     margin-top: 95px;
-    font-family: 'Roboto';
     font-size: 14px;
     font-weight: bold;
     letter-spacing: 0.03em;
@@ -150,7 +145,6 @@
 }
 
 .description-text {
-    font-family: 'Roboto';
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
@@ -159,7 +153,6 @@
 
 .center-title {
     margin-top: 95px;
-    font-family: 'Roboto';
     font-weight: bold;
     font-size: 36px;
     line-height: 42px;
@@ -170,7 +163,6 @@
 
 .team-name {
     margin-top: 30px;
-    font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
@@ -181,7 +173,6 @@
 
 .team-descr {
     margin-top: 10px;
-    font-family: 'Roboto';
     font-size: 16px;
     line-height: 19px;
     text-align: center;
