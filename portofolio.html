@@ -8,106 +8,112 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <a href="#" class="logo">
-            <span>Web</span>Studio
-        </a>
-        <nav>
-            <ul class="list-style">
-                <li>
-                     <a href="index.html" id="studio" class="header-link">Studio</a>
-                </li>
-                <li>
-                    <a href="#portofolio" id="portofolio" class="header-link">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#" class="header-link">Contacts</a>
-                </li>
-            </ul>
-        </nav>
-            <ul class="list-style">
-                <li>
-                    <a href="mailto:info@devstudio.com" class="mail">info@devstudio.com</a>
-                </li>
-                <li>
-                    <a href="tel:+12127724150" class="phone">+1 212-772-4150</a>
-                </li>
-            </ul>
-    </header>
+    <header class="section__header">
+        <div class="container">
+             <a href="#" class="logo">
+                 <span>Web</span>Studio
+             </a>
+             <nav>
+                 <ul class="list-style list-style-nav">
+                     <li>
+                         <a href="index.html" id="studio" class="header-link">Studio</a>
+                     </li>
+                     <li>
+                         <a href="portofolio.html" id="portofolio" class="header-link">Portfolio</a>
+                     </li>
+                     <li>
+                         <a href="#" class="header-link">Contacts</a>
+                     </li>
+                 </ul>
+             </nav>
+                 <ul class="list-style list-style-contacts">
+                     <li>
+                         <a href="mailto:info@devstudio.com" class="mail">info@devstudio.com</a>
+                     </li>
+                     <li>
+                         <a href="tel:+12127724150" class="phone">+1 212-772-4150</a>
+                     </li>
+                 </ul>
+         </div>
+     </header>
     <main>
         <section class="product">
-            <ul class="list-style">
-                <li>
-                    <button type="button" class="product-btn">All</button>
-                </li>
-                <li>
-                    <button type="button" class="product-btn">Web-sites</button>
-                </li>
-                <li>
-                    <button type="button" class="product-btn">Apps</button>
-                </li>
-                <li>
-                    <button type="button" class="product-btn">Design</button>
-                </li>
-                <li>
-                    <button type="button" class="product-btn">Marketing</button>
-                </li>
-            </ul>
-
-            <ul class="list-style">
-                <li>
-                    <img src="img/Technoduck-min.jpg" alt="Technoduck" width="370px" height="294px">
-                    <h2 class="product-subtitle">Technoduck</h2>
-                    <p class="product-text">Web-site</p>
-                </li>
-                <li>
-                    <img src="img/Poster-min.jpg" alt="Poster New Orlean vs Golden Star" width="370px" height="294px">
-                    <h2 class="product-subtitle">Poster New Orlean vs Golden Star</h2>
-                    <p class="product-text">Design</p>
-                </li>
-                <li>
-                    <img src="img/Seafood-min.jpg" alt="Seafood Restaurant" width="370px" height="294px">
-                    <h2 class="product-subtitle">Seafood Restaurant </h2>
-                    <p class="product-text">Apps</p>
-                </li>
-                <li>
-                    <img src="img/Prime-min.jpg" alt="Project Prime" width="370px" height="294px">
-                    <h2 class="product-subtitle">Project Prime</h2>
-                    <p class="product-text">Marketing</p>
-                </li>
-                <li>
-                    <img src="img/Boxes-min.jpg" alt="Project Boxes" width="370px" height="294px">
-                    <h2 class="product-subtitle">Project Boxes</h2>
-                    <p class="product-text">Apps</p>
-                </li>
-                <li>
-                    <img src="img/Inspiration-min.jpg" alt="Inspiration has no Borders" width="370px" height="294px">
-                    <h2 class="product-subtitle">Inspiration has no Borders</h2>
-                    <p class="product-text">Web-site</p>
-                </li>
-                <li>
-                    <img src="img/Limited-min.jpg" alt="Limited Edition" width="370px" height="294px">
-                    <h2 class="product-subtitle">Limited Edition</h2>
-                    <p class="product-text">Design</p>
-                </li>
-                <li>
-                    <img src="img/Project-min.jpg" alt="Project LAB" width="370px" height="294px">
-                    <h2 class="product-subtitle">Project LAB</h2>
-                    <p class="product-text">Marketing</p>
-                </li>
-                <li>
-                    <img src="img/Growing-min.jpg" alt="Growing Business" width="370px" height="294px">
-                    <h2 class="product-subtitle">Growing Business</h2>
-                    <p>Apps</p>
-                </li>
-            </ul>
+            <div class="container">
+                <ul class="list-style list-style-button">
+                    <li>
+                        <button type="button" class="product-btn">All</button>
+                    </li>
+                    <li>
+                        <button type="button" class="product-btn">Web-sites</button>
+                    </li>
+                    <li>
+                        <button type="button" class="product-btn">Apps</button>
+                    </li>
+                    <li>
+                        <button type="button" class="product-btn">Design</button>
+                    </li>
+                    <li>
+                        <button type="button" class="product-btn">Marketing</button>
+                    </li>
+                </ul>
+    
+                <ul class="list-style list-style-card">
+                    <li>
+                        <img src="img/Technoduck-min.jpg" alt="Technoduck" width="370px" height="294px">
+                        <h2 class="product-subtitle">Technoduck</h2>
+                        <p class="product-text">Web-site</p>
+                    </li>
+                    <li>
+                        <img src="img/Poster-min.jpg" alt="Poster New Orlean vs Golden Star" width="370px" height="294px">
+                        <h2 class="product-subtitle">Poster New Orlean vs Golden Star</h2>
+                        <p class="product-text">Design</p>
+                    </li>
+                    <li>
+                        <img src="img/Seafood-min.jpg" alt="Seafood Restaurant" width="370px" height="294px">
+                        <h2 class="product-subtitle">Seafood Restaurant </h2>
+                        <p class="product-text">Apps</p>
+                    </li>
+                    <li>
+                        <img src="img/Prime-min.jpg" alt="Project Prime" width="370px" height="294px">
+                        <h2 class="product-subtitle">Project Prime</h2>
+                        <p class="product-text">Marketing</p>
+                    </li>
+                    <li>
+                        <img src="img/Boxes-min.jpg" alt="Project Boxes" width="370px" height="294px">
+                        <h2 class="product-subtitle">Project Boxes</h2>
+                        <p class="product-text">Apps</p>
+                    </li>
+                    <li>
+                        <img src="img/Inspiration-min.jpg" alt="Inspiration has no Borders" width="370px" height="294px">
+                        <h2 class="product-subtitle">Inspiration has no Borders</h2>
+                        <p class="product-text">Web-site</p>
+                    </li>
+                    <li>
+                        <img src="img/Limited-min.jpg" alt="Limited Edition" width="370px" height="294px">
+                        <h2 class="product-subtitle">Limited Edition</h2>
+                        <p class="product-text">Design</p>
+                    </li>
+                    <li>
+                        <img src="img/Project-min.jpg" alt="Project LAB" width="370px" height="294px">
+                        <h2 class="product-subtitle">Project LAB</h2>
+                        <p class="product-text">Marketing</p>
+                    </li>
+                    <li>
+                        <img src="img/Growing-min.jpg" alt="Growing Business" width="370px" height="294px">
+                        <h2 class="product-subtitle">Growing Business</h2>
+                        <p>Apps</p>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
 
     <footer class="contacts">
+       <div class="container">
         <a href="#" class="logo">
             <span>Web</span>Studio
         </a>
@@ -124,6 +130,7 @@
                 </li>
             </ul>
         </address>
+       </div>
     </footer>
     
 </body>

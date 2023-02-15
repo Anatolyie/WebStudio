@@ -1,10 +1,28 @@
 * {
     font-family: 'Roboto', 'sans-serif';
     font-style: normal;
+    padding: 0;
+    margin: 0;
 }
 
 :root {
     --first-color: #2196F3;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 95px 0;
+}
+
+.section__header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 .logo {
@@ -24,6 +42,29 @@
     list-style-type: none;
 }
 
+.list-style-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-top: 32px;
+}
+
+.list-style-contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; 
+}
+
+.section__header {
+    min-height: 80px;
+}
+
+.section__header .logo {
+    padding-top: 24px;
+}
+
 .header-link {
     color: #212121;
     text-decoration: none;
@@ -31,6 +72,28 @@
 
 .header-link:hover {
     color: var(--first-color);
+}
+
+.product .list-style-button {
+    margin-top: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.product .list-style-card {
+    margin-top: 50px;
+    margin-bottom: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.product .list-style-card li {
+    border: 1px solid #EEEEEE;
 }
 
 
@@ -106,8 +169,10 @@
     max-width: 1440px;
     min-height: 430px;
     padding-top: 80px;
+    padding-bottom: 0;
     background: #2F303A;
 }
+
 
 .promo-title {
     font-weight: 900;
@@ -135,8 +200,21 @@
     border: none
 }
 
+.list-style-description {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.list-style-description li{
+    width: 270px;
+}
+
+.description {
+    padding-bottom: 0;
+}
+
 .description-title {
-    margin-top: 95px;
     font-size: 14px;
     font-weight: bold;
     letter-spacing: 0.03em;
@@ -152,7 +230,6 @@
 }
 
 .center-title {
-    margin-top: 95px;
     font-weight: bold;
     font-size: 36px;
     line-height: 42px;
@@ -161,6 +238,26 @@
     color: #212121;
 }
 
+.list-style-work {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.team {
+    padding-top: 95px;
+    background: #F5F4FA;
+}
+
+.list-style-team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-top: 50px;
+}
 .team-name {
     margin-top: 30px;
     font-weight: 500;
