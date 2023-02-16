@@ -29,7 +29,7 @@
     font-family: 'Raleway';
     font-weight: bold;
     font-size: 26px;
-    color: #fff;
+    color: #000;
     text-decoration: none;
 }
 
@@ -166,7 +166,6 @@
 }
 
 .promo {
-    max-width: 1440px;
     min-height: 430px;
     padding-top: 80px;
     padding-bottom: 0;
