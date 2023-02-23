@@ -83,7 +83,7 @@
 .header-link:hover {
     color: var(--first-color);
     border-bottom: 4px solid var(--first-color); 
-    padding-bottom: 26px;
+    padding-bottom: 25px;
 }
 
 .header-contact:hover {
@@ -195,10 +195,8 @@
     min-height: 430px;
     padding-top: 200px;
     padding-bottom: 0;
-    background: url('../img/background.png') center center/cover no-repeat;
+    background:  linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.40)), url('../img/background.png') center center/cover no-repeat;
 }
-
-
 
 .promo-title {
     font-weight: 900;
@@ -256,11 +254,6 @@
     top: 774px;
     background: #F5F4FA;
     border-radius: 4px;
-}
-
-.description-svg:hover {
-    stroke: var(--first-color);
-    cursor: pointer;
 }
 
 .description-title {
@@ -398,6 +391,14 @@
 
 .customers-card:hover {
     border-color: var(--first-color);
+}
+
+.customers-svg {
+    fill: #AFB1B8;
+}
+
+.customers-svg:hover {
+    fill: var(--first-color);
 }
 
 .contacts-wrapper {
