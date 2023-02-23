@@ -61,6 +61,11 @@
     gap: 40px;  
 }
 
+.list-style-contacts li {
+    display: flex;
+    gap: 10px;
+}
+
 .section__header {
     min-height: 80px;
     border-bottom: 1px solid #F5F4FA;
@@ -77,6 +82,12 @@
 
 .header-link:hover {
     color: var(--first-color);
+    border-bottom: 4px solid var(--first-color); 
+    padding-bottom: 26px;
+}
+
+.header-contact:hover {
+    stroke: var(--first-color)
 }
 
 .product .list-style-button {
@@ -101,6 +112,9 @@
     border: 1px solid #EEEEEE;
 }
 
+.product .list-style-card li:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .product-btn {
     font-weight: 500;
@@ -165,8 +179,11 @@
     background: #2F303A;
 }
 
+.footer-address {
+    padding-top: 28px;
+}
+
 .footer-address a {
-    margin-top: 28px;
     color: #fff;
     font-size: 14px;
     line-height: 16px;
@@ -178,14 +195,15 @@
     min-height: 430px;
     padding-top: 200px;
     padding-bottom: 0;
-    background: #2F303A;
+    background: url('../img/background.png') center center/cover no-repeat;
 }
+
 
 
 .promo-title {
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 57px;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -228,7 +246,25 @@
     padding-bottom: 0;
 }
 
+.description-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    left: 215px;
+    top: 774px;
+    background: #F5F4FA;
+    border-radius: 4px;
+}
+
+.description-svg:hover {
+    stroke: var(--first-color);
+    cursor: pointer;
+}
+
 .description-title {
+    padding-top: 30px;
     font-size: 14px;
     font-weight: bold;
     letter-spacing: 0.03em;
@@ -266,6 +302,28 @@
     background: #F5F4FA;
 }
 
+.team-card {
+    width: 270px;
+    min-height: 428px;
+    left: 215px;
+    top: 1785px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-img {
+    width: 270px;
+    height: 300px;
+}
+
+.team-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
 .list-style-team {
     display: flex;
     justify-content: center;
@@ -290,5 +348,99 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: #757575;
+}
 
+.team-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding-top: 16px;
+    padding-bottom: 30px;
+}
+
+.team-social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    color :#AFB1B8;
+}
+
+.team-social a:hover {
+    background-color: var(--first-color);
+    border-radius: 100%;
+    color: #fff
+}  
+
+.team-svg {
+    fill: currentColor;
+} 
+
+.list-style-customers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-top: 50px;
+}
+
+.customers-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.customers-card:hover {
+    border-color: var(--first-color);
+}
+
+.contacts-wrapper {
+    display: flex;
+    gap: 95px;
+}
+
+.contacts-title {
+    padding-top: 14px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff
+}
+
+.contacts-social {
+    padding-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.contacts-social li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 100%;
+    color: #fff;
+}
+
+.contacts-social li:hover {
+    background-color: var(--first-color);
+    cursor: pointer;
+}
+
+.contacts-social li a {
+    color: #fff
+}
+
+.contacts-svg {
+    fill: currentColor;
 }
