@@ -22,6 +22,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 84px;
 
 }
 
@@ -51,7 +52,17 @@
     justify-content: center;
     align-items: center;
     gap: 50px;
-    padding-top: 32px;
+}
+
+ .list-style-nav li a.header-link-active:hover:after {
+    content: '';
+    display: block;
+    border-bottom: 2px solid var(--first-color); 
+    opacity: 1;
+}
+
+.list-style-nav li {
+    position: relative;
 }
 
 .list-style-contacts {
@@ -66,13 +77,24 @@
     gap: 10px;
 }
 
+.list-style-contacts li a {
+    font-weight: 500;
+    line-height: 16px;
+    color: #757575;
+    text-decoration: none;
+}
+
+.list-style-contacts li a:hover{
+    color: var(--first-color);
+    border-bottom: 2px solid var(--first-color);
+    padding-bottom: 2px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .section__header {
     min-height: 80px;
     border-bottom: 1px solid #F5F4FA;
-}
-
-.section__header .logo {
-    padding-top: 24px;
 }
 
 .header-link {
@@ -80,14 +102,20 @@
     text-decoration: none;
 }
 
-.header-link:hover {
+
+.header-link:hover,
+.header-link:focus {
     color: var(--first-color);
     border-bottom: 4px solid var(--first-color); 
-    padding-bottom: 25px;
+    padding-bottom: 30px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contact:hover {
-    stroke: var(--first-color)
+    stroke: var(--first-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .product .list-style-button {
@@ -108,12 +136,25 @@
     gap: 30px;
 }
 
-.product .list-style-card li {
+.product-overlay {
     border: 1px solid #EEEEEE;
+    height: 404px;
+    position: relative;
+    overflow: hidden;
 }
 
-.product .list-style-card li:hover {
+.product-overlay:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.product-overlay:hover .product-content {
+    transform: translateY(-138%);
+    opacity: 1;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .product-btn {
@@ -133,27 +174,48 @@
     color: #fff;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.product-modal {
+    position: absolute;
+    width: 370px;
+    height: 294px;
+    transform: translateY(3%);
+}
+
+.product-content {
+    width: 100%;
+    height: 100%;
+    background: var(--first-color);
+    transform: translateY(-37%);
+    opacity: 0;
 }
 
 .mail, .phone {
-    display: inline-block;
-    font-weight: 500;
+    /* font-weight: 500;
     line-height: 16px;
     color: #757575;
-    margin-top: 32px;
-    text-decoration: none;
+    text-decoration: none; */
+    
 }
 
 .mail-footer, .phone-footer {
+    font-weight: 500;
+    line-height: 16px;
+    color: #757575;
+    text-decoration: none;
+    display: inline-block;
     margin-top: 12px;
 }
 
-.mail:hover, .phone:hover {
+.mail-footer:hover, .phone-footer:hover {
     color: var(--first-color);
-}
-
-.mail:focus, .phone:focus {
-    color: red;
+    border-bottom: 2px solid var(--first-color);
+    padding-bottom: 2px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .product-descr {
@@ -227,6 +289,8 @@
 .promo-btn:hover {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     cursor: pointer;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -288,6 +352,27 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
+}
+
+.work-item {
+    position: relative;
+}
+
+.work-footer {
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    font-weight: bold;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 1%
+   
 }
 
 .team {
@@ -364,7 +449,9 @@
 .team-social a:hover {
     background-color: var(--first-color);
     border-radius: 100%;
-    color: #fff
+    color: #fff;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }  
 
 .team-svg {
@@ -391,6 +478,8 @@
 
 .customers-card:hover {
     border-color: var(--first-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-svg {
@@ -399,6 +488,8 @@
 
 .customers-svg:hover {
     fill: var(--first-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-wrapper {
@@ -436,6 +527,8 @@
 .contacts-social li:hover {
     background-color: var(--first-color);
     cursor: pointer;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-social li a {
@@ -444,4 +537,54 @@
 
 .contacts-svg {
     fill: currentColor;
+}
+
+.overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.modal {
+    position: absolute;
+    width: 528px;
+    height: 581px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #000;
+    border-radius: 100%;
+    top: 8px;
+    right: 8px;
+    font-weight: 400;
+    font-size: 24px;
+    cursor: pointer;  
 }
