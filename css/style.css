@@ -58,7 +58,7 @@
     content: '';
     display: block;
     border-bottom: 2px solid var(--first-color); 
-    opacity: 1;
+    visibility: visible;
 }
 
 .list-style-nav li {
@@ -190,7 +190,7 @@
     height: 100%;
     background: var(--first-color);
     transform: translateY(-37%);
-    opacity: 0;
+    visibility: hidden;
 }
 
 .mail, .phone {
@@ -198,7 +198,6 @@
     line-height: 16px;
     color: #757575;
     text-decoration: none; */
-    
 }
 
 .mail-footer, .phone-footer {
