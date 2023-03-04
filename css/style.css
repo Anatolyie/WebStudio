@@ -54,13 +54,6 @@
     gap: 50px;
 }
 
- .list-style-nav li a.header-link-active:hover:after {
-    content: '';
-    display: block;
-    border-bottom: 2px solid var(--first-color); 
-    visibility: visible;
-}
-
 .list-style-nav li {
     position: relative;
 }
@@ -68,28 +61,13 @@
 .list-style-contacts {
     display: flex;
     justify-content: center;
-    align-items: center;
+    height: 16px;
     gap: 40px;  
 }
 
 .list-style-contacts li {
     display: flex;
-    gap: 10px;
-}
-
-.list-style-contacts li a {
-    font-weight: 500;
-    line-height: 16px;
-    color: #757575;
-    text-decoration: none;
-}
-
-.list-style-contacts li a:hover{
-    color: var(--first-color);
-    border-bottom: 2px solid var(--first-color);
-    padding-bottom: 2px;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    gap: 8px;
 }
 
 .section__header {
@@ -102,15 +80,23 @@
     text-decoration: none;
 }
 
-
-.header-link:hover,
-.header-link:focus {
-    color: var(--first-color);
-    border-bottom: 4px solid var(--first-color); 
-    padding-bottom: 30px;
+.header-link:hover {
+    border-bottom: 2px solid var(--first-color);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.header-link-studio:after,
+.header-link-portofolio:after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-bottom: 4px solid var(--first-color);
+    border-radius: 2px;
+    width: 100%;
+    top: 48px;
+}
+
 
 .header-contact:hover {
     stroke: var(--first-color);
@@ -130,7 +116,6 @@
     margin-top: 50px;
     margin-bottom: 90px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     gap: 30px;
@@ -141,6 +126,7 @@
     height: 404px;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .product-overlay:hover {
@@ -183,6 +169,7 @@
     width: 370px;
     height: 294px;
     transform: translateY(3%);
+    opacity: 0.8;
 }
 
 .product-content {
@@ -190,31 +177,29 @@
     height: 100%;
     background: var(--first-color);
     transform: translateY(-37%);
-    visibility: hidden;
+    opacity: 0;
 }
 
 .mail, .phone {
-    /* font-weight: 500;
-    line-height: 16px;
-    color: #757575;
-    text-decoration: none; */
-}
-
-.mail-footer, .phone-footer {
     font-weight: 500;
     line-height: 16px;
     color: #757575;
     text-decoration: none;
-    display: inline-block;
-    margin-top: 12px;
+    
 }
 
-.mail-footer:hover, .phone-footer:hover {
+.mail:hover, .phone:hover {
+    display: inline-block;
     color: var(--first-color);
     border-bottom: 2px solid var(--first-color);
-    padding-bottom: 2px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.mail-footer, .phone-footer {
+    display: inline-block;
+    padding-top: 12px;
 }
 
 .product-descr {
@@ -236,7 +221,7 @@
 
 .contacts {
     padding-top: 60px;
-    height: 151px;
+    min-height: 151px;
     background: #2F303A;
 }
 
@@ -296,6 +281,7 @@
 .list-style-description {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
