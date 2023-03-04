@@ -7,6 +7,7 @@
 
 :root {
     --first-color: #2196F3;
+    --time-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .container {
@@ -83,7 +84,7 @@
 .header-link:hover {
     border-bottom: 2px solid var(--first-color);
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--time-function);
 }
 
 .header-link-studio:after,
@@ -101,7 +102,7 @@
 .header-contact:hover {
     stroke: var(--first-color);
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--time-function);
 }
 
 .product .list-style-button {
@@ -132,14 +133,14 @@
 .product-overlay:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--time-function);
 }
 
 .product-overlay:hover .product-content {
     transform: translateY(-138%);
     opacity: 1;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--time-function);
 
 }
 
@@ -161,7 +162,7 @@
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--time-function);
 }
 
 .product-modal {
@@ -193,7 +194,7 @@
     color: var(--first-color);
     border-bottom: 2px solid var(--first-color);
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--time-function);
 }
 
 
@@ -274,7 +275,7 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     cursor: pointer;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--time-function);
 }
 
 
@@ -436,7 +437,7 @@
     border-radius: 100%;
     color: #fff;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--time-function);
 }  
 
 .team-svg {
@@ -464,7 +465,7 @@
 .customers-card:hover {
     border-color: var(--first-color);
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--time-function);
 }
 
 .customers-svg {
@@ -474,7 +475,7 @@
 .customers-svg:hover {
     fill: var(--first-color);
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--time-function);
 }
 
 .contacts-wrapper {
@@ -513,7 +514,7 @@
     background-color: var(--first-color);
     cursor: pointer;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--time-function);
 }
 
 .contacts-social li a {
@@ -533,14 +534,14 @@
     background: rgba(0, 0, 0, 0.2);
     z-index: 100;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--time-function);
 }
 
 .is-hidden {
     visibility: hidden;
     opacity: 0;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--time-function);
 
 }
 
