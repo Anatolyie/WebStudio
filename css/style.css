@@ -72,7 +72,7 @@
 
 .section__header {
     min-height: 80px;
-    /* border-bottom: 1px solid #F5F4FA; */
+    border-bottom: 1px solid #F5F4FA;
 }
 
 .header-link {
@@ -80,11 +80,11 @@
     text-decoration: none;
 }
 
-.header-link:hover {
+/* .header-link:hover {
     border-bottom: 2px solid var(--first-color);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 .header-link-studio:after,
 .header-link-portofolio:after {
@@ -141,6 +141,15 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+}
+
+.product-content  p {
+    padding: 60px 24px 90px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
 }
 
 .product-btn {
@@ -465,6 +474,7 @@
     border-color: var(--first-color);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer
 }
 
 .customers-svg {
