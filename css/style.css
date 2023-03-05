@@ -87,6 +87,7 @@
     transition-timing-function: var(--time-function);
 }
 
+
 .header-link-studio:after,
 .header-link-portofolio:after {
     content: '';
