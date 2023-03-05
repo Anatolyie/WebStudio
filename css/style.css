@@ -73,7 +73,7 @@
 
 .section__header {
     min-height: 80px;
-    border-bottom: 1px solid #F5F4FA;
+    /* border-bottom: 1px solid #F5F4FA; */
 }
 
 .header-link {
