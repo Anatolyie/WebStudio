@@ -7,6 +7,7 @@
 
 :root {
     --first-color: #2196F3;
+    --transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .container {
@@ -80,11 +81,6 @@
     text-decoration: none;
 }
 
-/* .header-link:hover {
-    border-bottom: 2px solid var(--first-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-} */
 
 .header-link-studio:after,
 .header-link-portofolio:after {
@@ -101,7 +97,7 @@
 .header-contact:hover {
     stroke: var(--first-color);
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--transition);
 }
 
 .product .list-style-button {
@@ -132,14 +128,14 @@
 .product-overlay:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--transition);
 }
 
 .product-overlay:hover .product-content {
     transform: translateY(-138%);
     opacity: 1;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--transition);
 
 }
 
@@ -170,7 +166,7 @@
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--transition);
 }
 
 .product-modal {
@@ -197,13 +193,12 @@
     
 }
 
-.mail:hover, .phone:hover {
+.mail:hover, .phone:hover { 
     display: inline-block;
     color: var(--first-color);
-    border-bottom: 2px solid var(--first-color);
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+    transition-timing-function: var(--transition);
+} 
 
 
 .mail-footer, .phone-footer {
@@ -283,7 +278,7 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     cursor: pointer;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--transition);
 }
 
 
@@ -343,6 +338,7 @@
 .list-style-work {
     padding-top: 50px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 30px;
@@ -398,6 +394,7 @@
 
 .list-style-team {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 30px;
@@ -445,7 +442,7 @@
     border-radius: 100%;
     color: #fff;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--transition);
 }  
 
 .team-svg {
@@ -473,7 +470,7 @@
 .customers-card:hover {
     border-color: var(--first-color);
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--transition);
     cursor: pointer
 }
 
@@ -484,16 +481,16 @@
 .customers-svg:hover {
     fill: var(--first-color);
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--transition);
 }
 
 .contacts-wrapper {
     display: flex;
+    justify-content: center;
     gap: 95px;
 }
 
 .contacts-title {
-    padding-top: 14px;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -523,7 +520,7 @@
     background-color: var(--first-color);
     cursor: pointer;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--transition);
 }
 
 .contacts-social li a {
@@ -532,6 +529,16 @@
 
 .contacts-svg {
     fill: currentColor;
+}
+
+.contacts-right {
+    display: flex;
+    gap: 12px;
+}
+
+.contacts-right label {
+    display: flex;
+    flex-direction: column;
 }
 
 .overlay {
@@ -543,21 +550,21 @@
     background: rgba(0, 0, 0, 0.2);
     z-index: 100;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--transition);
 }
 
 .is-hidden {
     visibility: hidden;
     opacity: 0;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--transition);
 
 }
 
 .modal {
     position: absolute;
     width: 528px;
-    height: 581px;
+    min-height: 581px;
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -583,3 +590,218 @@
     font-size: 24px;
     cursor: pointer;  
 }
+
+.close:hover {
+    cursor: pointer;
+    transition-duration: 250ms;
+    color: var(--first-color);
+}
+
+.modal-title {
+    padding-top: 40px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.modal-form {
+    padding: 12px 40px;
+    display: flex;  
+    flex-direction: column;
+    width: 448px;
+}
+
+.modal-form label {
+    position: relative;
+    padding-top: 12px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: #757575;
+    width: 100%;
+}
+
+.modal-form label:hover input{
+    border-color: var(--first-color)
+}
+
+.modal-form label svg {
+    position: absolute;
+    top: 43px;
+    left: 15px;
+}
+
+.modal-form input {
+    padding-left: 34px;
+    height: 35px;
+    width: 92%;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-top: 4px;
+    cursor: pointer;
+    outline: none;
+}
+
+.modal-form input:focus {
+    border-color: var(--first-color)
+}
+
+.modal-form textarea {
+    resize: none;
+    width: 92%;
+    margin-top: 4px;
+    height: 120px;
+    padding: 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    cursor: pointer;
+    outline: none;
+}
+
+.modal-form textarea:hover,
+.modal-form textarea:focus {
+    border-color: var(--first-color)
+}
+
+.modal-form textarea::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+}
+
+
+.modal-form label.form-checkbox {
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transition-duration: 250ms;
+    --transition: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form label.form-checkbox input {
+    width: unset;
+    height: 24px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.modal-form button {
+    width: 200px;
+    height: 50px;
+    background: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    border: none;
+    margin: 0 auto;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.button-footer {
+    width: 200px;
+    height: 50px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 36px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    padding: 13px 10px 13px 43px;
+    cursor: pointer;
+}
+
+.contacts-right {
+    width: 570px;
+}
+
+.contacts-right label {
+    width: 358px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.contacts-right input {
+    height: 19px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    margin-top: 20px;
+    background-color: #2F303A;
+    padding: 15px 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.contacts-right input::placeholder{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.modal-form input[type="checkbox"]:checked+.replace-checkbox {
+    background-color: var(--first-color);
+    border-color: var(--first-color)
+}
+
+.modal-form input[type="checkbox"] {
+    display: none;
+}
+
+.condition {
+    color: var(--first-color)
+}
+
+.replace-checkbox {
+    width: 16px;    
+    height: 16px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-checkbox .replace-checkbox svg {
+    position: static;
+    fill: white;
+}
+

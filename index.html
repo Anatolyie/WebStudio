@@ -312,7 +312,7 @@
                         </ul>
                     </address>
                 </div>
-                   <div class="contacts-right">
+                   <div class="contacts-center">
                     <h2 class="contacts-title">Find us on</h2>
                     <ul class="contacts-social">
                         <li>
@@ -345,6 +345,17 @@
                         </li>
                     </ul> 
                    </div>
+                   <div class="contacts-right">
+                    <label>
+                        Subscribe to the newsletter
+                        <input type="email" name="usermail" placeholder="E-mail">
+                    </label>
+                    <button class="button-footer" type="submit">Subscribe
+                        <svg width="24" height="24" class="icon-send">
+                            <use href="img/icons.svg/2symbol-defs.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                   </div>
             </ul>
         </div>
     </footer>
@@ -352,6 +363,45 @@
     <div data-modal class="overlay is-hidden">
         <div class="modal">
             <button data-modal-close class="close">&#215;</button>
+            <h2 class="modal-title">Leave your information and we'll call you back</h2>
+            <form action="#" class="modal-form">
+                <label>
+                    Name
+                    <svg width="12" height="12" class="svg-man">
+                        <use href="img/icons.svg/2symbol-defs.svg#svg-man"></use>
+                    </svg>
+                    <input type="text" name="username" class="form-input">
+                </label>
+                <label>
+                    Telephone
+                    <svg width="13" height="13" class="phone">
+                        <use href="img/icons.svg/2symbol-defs.svg#phone"></use>
+                    </svg>
+                    <input type="tel" name="userphone" class="form-input">
+                </label>
+                <label>
+                    E-mail
+                    <svg width="15" height="12" class="svg-mail">
+                        <use href="img/icons.svg/2symbol-defs.svg#svg-mail"></use>
+                    </svg>
+                    <input type="email" name="usermail" class="form-input">
+                </label>
+                <label>
+                    Comments
+                    <textarea name="comments" placeholder="Enter the text" class="form-input"></textarea>
+                </label>
+                <label class="form-checkbox">
+                    <input type="checkbox">
+                    <span class="replace-checkbox">
+                        <svg width="15" height="16" class="svg-mail">
+                            <use href="img/icons.svg/2symbol-defs.svg#icon-checked"></use>
+                        </svg>
+                    </span>
+                    I agree with the letter and accept the<a href="#" class="condition">Terms and Conditions</a>
+                </label>
+
+                <button type="submit">Send</button>
+            </form>
         </div>
     </div>
 
