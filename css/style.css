@@ -649,7 +649,12 @@
 }
 
 .modal-form input:focus {
-    border-color: var(--first-color)
+    border-color: var(--first-color);
+}
+
+.modal-form label input:focus + svg,
+.modal-form label input:hover + svg {
+    fill: var(--first-color);
 }
 
 .modal-form textarea {
