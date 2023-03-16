@@ -1,0 +1,37 @@
+
+.promo {
+	min-height: 430px;
+	padding-top: 200px;
+	padding-bottom: 0;
+	background: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.40)), url('../img/background.png') center center/cover no-repeat;
+}
+.promo__title {
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 57px;
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: $color_5;
+}
+.promo__btn {
+	display: block;
+	margin: 0 auto;
+	padding: 10px 20px;
+	margin-top: 30px;
+	height: 50px;
+	background: $first-color;
+	border-radius: 4px;
+	font-weight: bold;
+	line-height: 30px;
+	text-align: center;
+	letter-spacing: 0.06em;
+	color: $color_5;
+	border: none;
+	&:hover {
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+		cursor: pointer;
+		transition-duration: 250ms;
+		transition-timing-function: var(--transition);
+	}
+}
