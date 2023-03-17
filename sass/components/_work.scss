@@ -1,13 +1,11 @@
 .work {
 	&-list {
-		&__style {
-			padding-top: 50px;
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			align-items: center;
-			gap: 30px;
-		}
+		padding-top: 50px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		gap: 30px;
 		&__item {
 			position: relative;
 		}

@@ -1,12 +1,10 @@
 .customers {
 	&-list {
-		&__style {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			gap: 30px;
-			padding-top: 50px;
-		}
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 30px;
+		padding-top: 50px;
 	} 
 	&-card {
 		display: flex;

@@ -1,24 +1,20 @@
 .header {
+	min-height: 80px;
+	border-bottom: 1px solid #F5F4FA;
 	.container {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		height: 84px;
 	}
-	min-height: 80px;
-	border-bottom: 1px solid #F5F4FA;
-}
-.header {
 	&-list {
-		&__nav {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			gap: 50px;
-			li {
-				position: relative;
-			}
-		}
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 50px;
+		li {
+			position: relative;
+		}	
 	}
 	&-link {
 		color: $color_4;

@@ -2,17 +2,14 @@
 .description {
 	padding-bottom: 0;
 	&-list {
-		&__style {
-			display: flex;
-			justify-content: center;
-			flex-wrap: wrap;
-			gap: 30px;
-			li {
-				width: 270px;
-			}
-		}	
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 30px;
+		li {
+			width: 270px;
+		}
 	}
-	
 	&-box {
 		display: flex;
 		justify-content: center;
