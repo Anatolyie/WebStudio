@@ -3,7 +3,7 @@
 	min-height: 151px;
 	background: #2F303A;
 }
-.contacts__address {
+.contacts-address {
 	padding-top: 28px;
 	a {
 		color: $color_2;
@@ -13,12 +13,12 @@
 		text-decoration: none;
 	}
 }
-.contacts__wrapper {
+.contacts-wrapper {
 	display: flex;
 	justify-content: center;
 	gap: 95px;
 }
-.contacts__title {
+.contacts-title {
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 16px;
@@ -26,7 +26,7 @@
 	text-transform: uppercase;
 	color: $color_2;
 }
-.contacts__social {
+.contacts-social {
 	padding-top: 20px;
 	display: flex;
 	gap: 10px;
@@ -53,7 +53,7 @@
 .contacts-svg {
 	fill: currentColor;
 }
-.contacts__right {
+.contacts-right {
 	display: flex;
 	gap: 12px;
 	width: 570px;
@@ -89,7 +89,7 @@
 		}
 	}
 }
-.contacts__button {
+.contacts-button {
 	width: 200px;
 	height: 50px;
 	background: #2196F3;
@@ -139,4 +139,12 @@
 			color: $color_9;
 		}
 	}
+}
+.contacts-info {
+	display: flex;
+	gap: 10px;
+}
+
+.contacts-info__footer {
+	color: $color_2;
 }

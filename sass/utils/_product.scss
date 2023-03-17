@@ -1,12 +1,12 @@
 .product {
-	.product__list {
+	.product-list {
 		margin-top: 95px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		gap: 8px;
 	}
-	.product__list-card {
+	.product-list__card {
 		margin-top: 50px;
 		margin-bottom: 90px;
 		display: flex;
@@ -15,7 +15,7 @@
 		gap: 30px;
 	}
 }
-.product__overlay {
+.product-overlay {
 	border: 1px solid #EEEEEE;
 	height: 404px;
 	position: relative;
@@ -25,7 +25,7 @@
 		box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 		transition-duration: 250ms;
 		transition-timing-function: var(--transition);
-		.product__content {
+		.product-content {
 			transform: translateY(-138%);
 			opacity: 1;
 			transition-duration: 250ms;
@@ -33,7 +33,7 @@
 		}
 	}
 }
-.product__content {
+.product-content {
 	p {
 		padding: 60px 24px 90px;
 		font-weight: 400;
@@ -48,7 +48,7 @@
 	transform: translateY(-37%);
 	opacity: 0;
 }
-.product__list-btn {
+.product-list__btn {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 26px;
@@ -67,23 +67,23 @@
 		transition-timing-function: var(--transition);
 	}
 }
-.product__modal {
+.product-modal {
 	position: absolute;
 	width: 370px;
 	height: 294px;
 	transform: translateY(3%);
 	opacity: 0.8;
 } 
-.product__descr {
+.product-descr {
 	padding: 20px 24px;
 }
-.product__subtitle {
+.product-subtitle {
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 36px;
 	color: $color_4;
 }
-.product__text {
+.product-text {
 	margin-top: 4px;
 	font-size: 16px;
 	color: $color_6;

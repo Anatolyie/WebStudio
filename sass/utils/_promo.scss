@@ -5,7 +5,7 @@
 	padding-bottom: 0;
 	background: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.40)), url('../img/background.png') center center/cover no-repeat;
 }
-.promo__title {
+.promo-title {
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 57px;
@@ -14,7 +14,7 @@
 	text-transform: uppercase;
 	color: $color_5;
 }
-.promo__btn {
+.promo-btn {
 	display: block;
 	margin: 0 auto;
 	padding: 10px 20px;

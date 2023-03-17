@@ -1,4 +1,4 @@
-.description__list-style {
+.description-list__style {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -10,7 +10,7 @@
 .description {
 	padding-bottom: 0;
 }
-.description__box {
+.description-box {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -21,7 +21,7 @@
 	background: #F5F4FA;
 	border-radius: 4px;
 }
-.description__title {
+.description-title {
 	padding-top: 30px;
 	font-size: 14px;
 	font-weight: bold;
@@ -29,7 +29,7 @@
 	text-transform: uppercase;
 	color: $color_4;
 }
-.description__text {
+.description-text {
 	padding-top: 10px;
 	font-size: 14px;
 	line-height: 24px;
