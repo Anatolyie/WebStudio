@@ -1,67 +1,6 @@
 .team {
 	padding-top: 95px;
 	background: #F5F4FA;
-	&-card {
-		width: 270px;
-		min-height: 428px;
-		left: 215px;
-		top: 1785px;
-		background: #FFFFFF;
-		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-		border-radius: 0px 0px 4px 4px;
-	}
-	&-img {
-		width: 270px;
-		height: 300px;
-		img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-		}
-	}
-	&-name {
-		margin-top: 30px;
-		font-weight: 500;
-		font-size: 16px;
-		line-height: 19px;
-		text-align: center;
-		letter-spacing: 0.03em;
-		color: $color_4;
-	}
-	&-descr {
-		margin-top: 10px;
-		font-size: 16px;
-		line-height: 19px;
-		text-align: center;
-		letter-spacing: 0.03em;
-		color: $color_6;
-	}
-	&-social {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		gap: 5px;
-		padding-top: 16px;
-		padding-bottom: 30px;
-		a {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			width: 44px;
-			height: 44px;
-			color: $color_7;
-			&:hover {
-				background-color: $background-color_2;
-				border-radius: 100%;
-				color: $color_2;
-				transition-duration: 250ms;
-				transition-timing-function: var(--transition);
-			}
-		}
-	}
-	&-svg {
-		fill: currentColor;
-	}
 	&-list {
 		display: flex;
 		flex-wrap: wrap;
@@ -69,7 +8,70 @@
 		align-items: center;
 		gap: 30px;
 		padding-top: 50px;
+		&__card {
+			width: 270px;
+			min-height: 428px;
+			left: 215px;
+			top: 1785px;
+			background: #FFFFFF;
+			box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+			border-radius: 0px 0px 4px 4px;
+		}
+		&__img {
+			width: 270px;
+			height: 300px;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+		&__name {
+			margin-top: 30px;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 19px;
+			text-align: center;
+			letter-spacing: 0.03em;
+			color: $color_4;
+		}
+		&__descr {
+			margin-top: 10px;
+			font-size: 16px;
+			line-height: 19px;
+			text-align: center;
+			letter-spacing: 0.03em;
+			color: $color_6;
+		}
+		&__social {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 5px;
+			padding-top: 16px;
+			padding-bottom: 30px;
+			a {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 44px;
+				height: 44px;
+				color: $color_7;
+				&:hover {
+					background-color: $background-color_2;
+					border-radius: 100%;
+					color: $color_2;
+					transition-duration: 250ms;
+					transition-timing-function: var(--transition);
+				}
+			}
+		}
+		&__svg {
+			fill: currentColor;
+		}
 	}
+	
+	
 }
 
 

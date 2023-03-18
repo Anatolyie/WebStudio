@@ -5,29 +5,29 @@
 		align-items: center;
 		gap: 30px;
 		padding-top: 50px;
+		&__card {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 170px;
+			height: 92px;
+			border: 1px solid #AFB1B8;
+			border-radius: 4px;
+			&:hover {
+				border-color: $border-color_1;
+				transition-duration: 250ms;
+				transition-timing-function: var(--transition);
+				cursor: pointer;
+			}
+		}
+		&__svg {
+			fill: #AFB1B8;
+			&:hover {
+				fill: $first-color;
+				transition-duration: 250ms;
+				transition-timing-function: var(--transition);
+			}
+		}
 	} 
-	&-card {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 170px;
-		height: 92px;
-		border: 1px solid #AFB1B8;
-		border-radius: 4px;
-		&:hover {
-			border-color: $border-color_1;
-			transition-duration: 250ms;
-			transition-timing-function: var(--transition);
-			cursor: pointer;
-		}
-	}
-	&-svg {
-		fill: #AFB1B8;
-		&:hover {
-			fill: $first-color;
-			transition-duration: 250ms;
-			transition-timing-function: var(--transition);
-		}
-	}
 }
 

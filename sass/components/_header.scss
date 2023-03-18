@@ -7,20 +7,19 @@
 		align-items: center;
 		height: 84px;
 	}
+	&-logo {
+		color: $color_1;
+	}
 	&-list {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		gap: 50px;
-		li {
+		&__link {
 			position: relative;
-		}	
-	}
-	&-link {
-		color: $color_4;
-		text-decoration: none;
-	}
-	&-link {
+			color: $color_4;
+			text-decoration: none;
+		}
 		&__studio {
 			&:after {
 				content: '';
@@ -43,7 +42,7 @@
 				top: 49px;
 			}
 		}
-	}
+	}	
 	&__contact {
 		&:hover {
 			stroke: $first-color;

@@ -17,11 +17,8 @@
 	font-family: $font-family_2;
 	font-weight: bold;
 	font-size: 26px;
-	color: $color_1;
+	color: $first-color;	
 	text-decoration: none;
-	span {
-		color: $first-color;
-	}
 }
 .list {
 	&-style {
@@ -30,6 +27,7 @@
 }
 
 .mail {
+	gap: 8px;
 	font-weight: 500;
 	line-height: 16px;
 	color: $color_6;
@@ -39,6 +37,10 @@
 		color: $first-color;
 		transition-duration: 250ms;
 		transition-timing-function: var(--transition);
+	}
+	&-footer {
+		display: inline-block;
+		padding-top: 12px;
 	}
 }
 .phone {
@@ -51,12 +53,6 @@
 		color: $first-color;
 		transition-duration: 250ms;
 		transition-timing-function: var(--transition);
-	}
-}
-.mail {
-	&-footer {
-		display: inline-block;
-		padding-top: 12px;
 	}
 }
 .center {
@@ -79,62 +75,15 @@
 	z-index: 100;
 	transition-duration: 250ms;
 	transition-timing-function: $transition;
-	position: fixed;
-	width: 100vw;
-	height: 100vh;
-	left: 0px;
-	top: 0px;
-	background: rgba(0, 0, 0, 0.2);
-	z-index: 100;
-	transition-duration: 250ms;
-	transition-timing-function: $transition;
 }
 .is-hidden {
 	visibility: hidden;
 	opacity: 0;
 	transition-duration: 250ms;
 	transition-timing-function: $transition;
-	visibility: hidden;
-	opacity: 0;
-	transition-duration: 250ms;
-	transition-timing-function: $transition;
 }
-.modal {
-	position: absolute;
-	width: 528px;
-	min-height: 581px;
-	background: #FFFFFF;
-	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-	border-radius: 4px;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	position: absolute;
-	width: 528px;
-	min-height: 581px;
-	background: #FFFFFF;
-	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-	border-radius: 4px;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-}
+
 .close {
-	position: absolute;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 30px;
-	height: 30px;
-	background: #FFFFFF;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	color: $color_1;
-	border-radius: 100%;
-	top: 8px;
-	right: 8px;
-	font-weight: 400;
-	font-size: 24px;
-	cursor: pointer;
 	position: absolute;
 	display: flex;
 	justify-content: center;
@@ -154,13 +103,10 @@
 		cursor: pointer;
 		transition-duration: 250ms;
 		color: $first-color;
-		cursor: pointer;
-		transition-duration: 250ms;
-		color: $first-color;
 	}
 }
 
-.form-checkbox span.replace-checkbox svg.svg-checked{
+.modal-form__checked svg.svg-checked{
 	position: relative;
 	fill: #fff;
 	left: 0;
