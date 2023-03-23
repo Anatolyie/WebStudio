@@ -41,7 +41,7 @@
             &__right {
                 flex-direction: column;
                 text-align: center;
-                width: 420px;
+                width: 355px;
                 label {
                     width: 100%;
                     margin-bottom: 20px;
@@ -135,7 +135,11 @@
     .customers {
         &-list {
             flex-wrap: wrap;
+            &__card {
+                flex-basis: calc((100% - 2 * 30px) / 2);
+            }
         }
+
     }
     .contacts {
         padding-bottom: 40px;
@@ -156,10 +160,9 @@
             &__right {
                 flex-direction: column;
                 text-align: center;
-                width: 390px;
                 label {
                     width: 100%;
-                    margin-bottom: 20px;
+                    margin-bottom: 20px; 
                 }
             }
             &__phone {
