@@ -2,8 +2,6 @@
     .menu-toggle {
       display: none;
     }
-
-
 }
 @media (max-width: 767px) {
     .menu {
@@ -42,7 +40,7 @@
             &__right {
                 flex-direction: column;
                 text-align: center;
-                width: 450px;
+                width: 420px;
                 label {
                     width: 100%;
                     margin-bottom: 20px;
@@ -71,12 +69,18 @@
     .description {
         &-list {
             &__item {
+                width: unset;
                 flex-basis: calc((100% - 2 * 30px) / 2);
+            }
+            &__box {
+                width: unset;;
             }
         }
     }
     .team {
         &-list {
+            // width: 370px;
+            // margin: 0 auto;
             &__card {
                 flex-basis: calc((100% - 2 * 30px) / 2);
             }
@@ -89,7 +93,10 @@
             }
             &__overlay {
                 flex-basis: calc((100% - 2 * 30px) / 2);
-                height: 320px;
+                height: 365px;
+            }
+            &__subtitle {
+                line-height: 24px;
             }
         }
     }
@@ -151,7 +158,7 @@
             &__right {
                 flex-direction: column;
                 text-align: center;
-                width: 450px;
+                width: 390px;
                 label {
                     width: 100%;
                     margin-bottom: 20px;
@@ -181,14 +188,77 @@
     .product {
         &-list {
             &__btn {
-                font-size: 12px;
+                font-size: 11px;
             }
             &__card {
                 justify-content: center;
             }
         }
     }
+    .description {
+        &-list {
+            &__item {
+                width: unset;
+                flex-basis: calc((100% - 2 * 30px) / 1);
+            }
+            &__box {
+                width: unset;;
+            }
+        }
+    }
 }
+
+// @media  screen and (max-width: 480px) { 
+//     .promo {
+//         background: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.40)), url('../img/Header_img-M-min.png') center center/cover no-repeat;
+//     }
+// }
+
+// @media screen and (max-width: 480px) and (min-device-pixel-ratio: 2),
+//   screen and (max-width: 480px) and (min-resolution: 192dpi),
+//   screen and (max-width: 480px) and (min-resolution: 2dppx){
+//         .promo {
+//             background: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.40)), url('../img/Header_img-M-R-2-min.png') center center/cover no-repeat;
+//     }
+// }
+
+
+// @media  screen and (min-width: 768px){
+//     .promo{
+//         background: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.40)), url('../img/Header_img-M-min.png') center center/cover no-repeat;
+//     }
+// }
+
+// @media  screen and (min-width: 1200px){
+//     .promo {
+//         background-image: url("images/background.png")
+// }
+// }
+
+// @media screen and (min-device-pixel-ratio: 2),
+// screen and (min-resolution: 192dpi),
+// screen and (min-resolution: 2dppx){
+//     .promo {
+//         background-image: url("images/Header_img-M-R-2-min.png")
+//     }
+// }
+
+// @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+// screen and (min-width: 768px) and (min-resolution: 192dpi),
+// screen and (min-width: 768px) and (min-resolution: 2dppx){
+//     .promo {
+//         background-image: url("images/Header_img-T-R-2-min.png")
+//     }
+// }
+
+// @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+// screen and (min-width: 1200px) and (min-resolution: 192dpi),
+// screen and (min-width: 1200px) and (min-resolution: 2dppx){
+//     .promo {
+//         background-image: url("images/Header_img-D-R-2-min.png")
+// }
+// }
+
 
 
 
