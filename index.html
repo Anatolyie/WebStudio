@@ -17,7 +17,7 @@
              <a href="#" class="logo">
                  <span class="header-logo">Web</span>Studio
              </a>
-             <nav>
+             <nav class="menu menu-header">
                  <ul class="list-style header-list">
                      <li>
                          <a href="#" class="header-list__link header-list__studio">Studio</a>
@@ -30,7 +30,7 @@
                      </li>
                  </ul>
              </nav>
-             <ul class="list-style contacts__info">
+             <ul class="list-style contacts__info menu menu-header">
                  <li>
                      <a href="mailto:info@devstudio.com" class="mail">
                          <svg width="16" height="12" class="header__contact">
@@ -50,6 +50,23 @@
                      <a href="tel:+12127724150" class="phone">+1 212-772-4150</a>
                  </li>
              </ul>
+             <button
+                class="menu-toggle js-open-menu"
+                aria-expanded="false"
+                aria-controls="mobile-menu">
+                <svg
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                    fill-rule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clip-rule="evenodd"
+                    ></path>
+                </svg>
+            </button>
          </div>
      </header>
  
@@ -65,7 +82,7 @@
      <section class="description section">
         <div class="container">
              <ul class="list-style description-list">
-                 <li>
+                 <li class="description-list__item">
                      <div class="description-list__box">
                          <svg width="65" height="70" class="description-svg">
                              <use href="img/icons.svg/symbol-defs.svg#icon-anten"></use>
@@ -74,7 +91,7 @@
                      <h2 class="description-list__title">ATTENTION TO DETAILS</h2>
                      <p class="description-list__text">We go into all the details and processes of your business to develop a customized solution.</p>
                  </li>
-                 <li>
+                 <li class="description-list__item">
                      <div class="description-list__box">
                          <svg width="65" height="70" class="description-svg">
                              <use href="img/icons.svg/symbol-defs.svg#icon-clock-1"></use>
@@ -83,7 +100,7 @@
                      <h2 class="description-list__title">PUNCTUALITY</h2>
                      <p class="description-list__text">With us, you can feel safe and secure. An important principle of the company: respect your time and deadlines.</p>
                  </li>
-                 <li>
+                 <li class="description-list__item">
                      <div class="description-list__box">
                          <svg width="65" height="70" class="description-svg">
                              <use href="img/icons.svg/symbol-defs.svg#icon-diagram-1"></use>
@@ -92,7 +109,7 @@
                      <h2 class="description-list__title">PLANNING</h2>
                      <p class="description-list__text">You will be able to observe and participate in every phase of solution development and implementation.</p>
                  </li>
-                 <li>
+                 <li class="description-list__item">
                      <div class="description-list__box">
                          <svg width="65" height="70" class="description-svg">
                              <use href="img/icons.svg/symbol-defs.svg#icon-astronaut-1"></use>
@@ -287,12 +304,55 @@
          </div>
      </section>
      </main>
+
+     <div class="menu-container js-menu-container menu-close" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg
+            fill="black"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24">
+            <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+          </svg>
+        </button>
+  
+        <ul class="mobile-menu">
+            <li><a href="" class="link">Studio</a></li>
+            <li><a href="portofolio.html" class="link">Portofolio</a></li>
+            <li><a href="" class="link">Contacts</a></li>
+        </ul>
+
+        <ul class="mobile-menu mobile-menu__contacts">
+            <li>
+                <a href="tel:+12127724150" class=" mobile-menu__info mobile-menu__phone">+1 212-772-4150</a>
+            </li>
+            <li>
+                <a href="mailto:info@devstudio.com" class="mobile-menu__info">
+                    info@devstudio.com
+                </a>
+            </li>
+            <ul class="mobile-menu mobile-menu__social">
+                <li class="mobile-menu__border"><a href="" class="mobile-menu__link">Instagram</a></li>
+                <li class="mobile-menu__border"><a href="" class="mobile-menu__link">Twitter</a></li>
+                <li class="mobile-menu__border"><a href="" class="mobile-menu__link">Facebook</a></li>
+                <li class="mobile-menu__border"><a href="" class="mobile-menu__link mobile-menu__border">LinkedIn</a></li>
+              </ul>
+            </div>
+        </ul>
+
+        </div>
+      </div> 
  
-     <footer class="contacts">
+    <footer class="contacts">
          <div class="container">
              <ul class="contacts-wrapper">
                  <div class="contacts-wrapper__left">
-                     <a href="#" class="logo">
+                     <a href="#" class="logo contacts-wrapper__logo">
                          <span class="contacts-wrapper__footer">Web</span>Studio
                      </a>
                      <address>
@@ -301,11 +361,11 @@
                                  <a href="#">695 Park Ave, NY 10065, USA</a>
                              </li>
                              <li>
-                                  <a href="mailto:info@devstudio.com" class="mail mail-footer">info@devstudio.com</a>
+                                  <a href="mailto:info@devstudio.com" class="mail mail-footer contacts-wrapper__center">info@devstudio.com</a>
                              </li>
                              <li>
                                  <li>
-                                     <a href="tel:+12127724150" class="phone phone-footer">+1 212-772-4150</a>
+                                     <a href="tel:+12127724150" class="phone phone-footer contacts-wrapper__center contacts-wrapper__phone">+1 212-772-4150</a>
                                 </li>
                              </li>
                             
@@ -360,7 +420,7 @@
          </div>
      </footer>
 
-    <div data-modal class="overlay is-hidden">
+     <div data-modal class="overlay is-hidden">
         <div class="modal">
             <button data-modal-close class="close">&#215;</button>
             <h2 class="modal-title">Leave your information and we'll call you back</h2>
@@ -403,8 +463,9 @@
                 <button type="submit" class="modal-form__btn">Send</button>
             </form>
         </div>
-    </div>
+    </div> 
 
+    <script src="js/mobile.menu.js"></script>
     <script src="js/modal.js"></script>
 </body>
 </html>
