@@ -92,7 +92,7 @@
             }
             &__overlay {
                 flex-basis: calc((100% - 2 * 30px) / 2);
-                height: 365px;
+                height: 400px;
             }
             &__subtitle {
                 line-height: 24px;
@@ -190,9 +190,13 @@
         &-list {
             &__btn {
                 font-size: 11px;
+                padding: 3px 15px;
             }
             &__card {
                 justify-content: center;
+            }
+            &__overlay {
+                flex-basis: calc((100% - 2 * 30px) / 1);
             }
         }
     }
@@ -212,14 +216,14 @@
 
 @media  screen and (min-width: 768px){
     .promo {
-        background-image: url('../img/Header_img-M-min.png') center center/cover no-repeat;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.40)), url('../img/Header_img-M-min.png') center center/cover no-repeat
     }
 }
 
 
 @media  screen and (min-width: 1200px){
     .promo {
-        background-image: url('../img/Header_img-T-min.png') 
+        background-image: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.40)), url('../img/Header_img-T-min.png') center center/cover no-repeat
     }
 }
 
@@ -228,7 +232,7 @@
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx){
     .promo {
-        background-image: url("images/Header_img-M-R-2-min.png")
+        background-image: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.40)), url("../img/Header_img-M-R-@2X-min.png") 
     }
 }
 
@@ -236,7 +240,7 @@
   screen and (min-width: 768px) and (min-resolution: 192dpi),
   screen and (min-width: 768px) and (min-resolution: 2dppx){
     .promo {
-        background-image: url("images/Header_img-T-R-2-min.png")
+        background-image: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.40)), url("../img/Header_img-T-R-@2X-min.png") 
     }
 }
 
@@ -244,7 +248,7 @@
 screen and (min-width: 1200px) and (min-resolution: 192dpi),
 screen and (min-width: 1200px) and (min-resolution: 2dppx){
     .promo {
-        background-image: url("images/Header_img-D-R-2-min.png")
+        background-image: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.40)), url("../img/Header_img-D-R-@2X-min.png") center center/cover no-repeat
     }
 }
 
