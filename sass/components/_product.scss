@@ -28,6 +28,7 @@
 			margin-top: 50px;
 			margin-bottom: 90px;
 			display: flex;
+			justify-content: center;
 			align-items: center;
 			flex-wrap: wrap;
 			gap: 30px;
@@ -53,5 +54,33 @@
 			font-size: 16px;
 			color: $color_6;
 		}
+		&__item {
+			position: absolute;
+			top: 0;
+			left: 0;
+			overflow: hidden;
+			&:hover {
+				.product-list__info {
+					transform: translateY(0);
+					transition-duration: 250ms;
+					transition-timing-function: var(--transition);
+				}
+			}
+		}
+		&__info {
+			top: 0;
+			background: rgba(33, 150, 243, 0.7);
+			transform: translateY(100%);
+			span {
+			display: inline-block;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 28px;
+			padding: 63px 24px 91px;
+			color: $color_2;
+			letter-spacing: 0.03em;
+		}
+	}
 	}
 }
+

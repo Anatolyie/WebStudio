@@ -37,6 +37,7 @@
 		color: $first-color;
 		transition-duration: 250ms;
 		transition-timing-function: var(--transition);
+		stroke: $first-color
 	}
 	&-footer {
 		display: inline-block;
